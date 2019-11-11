@@ -1,0 +1,47 @@
+{
+    "name": "channel1",
+    "description": "Network on IBP v2",
+    "version": "1.0.0",
+    "client": {
+        "organization": "org1msp"
+    },
+    "organizations": {
+        "org1msp": {
+            "mspid": "org1msp",
+            "peers": [
+                "nfcaa4f-peerorg1.ibp2.us-south.containers.appdomain.cloud:7051"
+            ],
+            "certificateAuthorities": [
+                "nfcaa4f-org1ca.ibp2.us-south.containers.appdomain.cloud:7054"
+            ]
+        }
+    },
+    "orderers": {
+        "nfcaa4f-orderingservice1.ibp2.us-south.containers.appdomain.cloud:7050": {
+            "url": "grpcs://nfcaa4f-orderingservice1.ibp2.us-south.containers.appdomain.cloud:7050",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICMTCCAdigAwIBAgIURDEh9lCsFdQXJxGk77T+F6RUrFswCgYIKoZIzj0EAwIw\nbTELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMR4wHAYDVQQDExVPcmRlcmlu\nZ1NlcnZpY2VDQS10bHMwHhcNMTkxMTAzMTU0MDAwWhcNMzQxMDMwMTU0MDAwWjBt\nMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xpbmExFDASBgNVBAoT\nC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxHjAcBgNVBAMTFU9yZGVyaW5n\nU2VydmljZUNBLXRsczBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABDhtH5BWxgkU\nkI2EzsVhutmddbR267svc9ciFyQA+MlkQesNESmmZzlXfsFkZiTi5/GQ0MYCK+p/\n9qE9kq+VKrqjVjBUMA4GA1UdDwEB/wQEAwIBBjASBgNVHRMBAf8ECDAGAQH/AgEB\nMB0GA1UdDgQWBBSSPk2W51x1lefW4tUcr1dAmqvFJDAPBgNVHREECDAGhwQKXuZx\nMAoGCCqGSM49BAMCA0cAMEQCIAkgz5hY4aJmhlC4mDcy2/7kMNPoM5V1ZAbIy9fs\nhFpeAiBucvFHYU3mgVofFL13PYSSQE6rdrad4RMIakpeuvQ9Yg==\n-----END CERTIFICATE-----\n"
+            }
+        }
+    },
+    "peers": {
+        "nfcaa4f-peerorg1.ibp2.us-south.containers.appdomain.cloud:7051": {
+            "url": "grpcs://nfcaa4f-peerorg1.ibp2.us-south.containers.appdomain.cloud:7051",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICHDCCAcKgAwIBAgIUU+acMnjqAGr2MUVfjpdYxu5a/FswCgYIKoZIzj0EAwIw\nYjELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRMwEQYDVQQDEwpPcmcxQ0Et\ndGxzMB4XDTE5MTEwMzE1MTkwMFoXDTM0MTAzMDE1MTkwMFowYjELMAkGA1UEBhMC\nVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQKEwtIeXBlcmxlZGdl\ncjEPMA0GA1UECxMGRmFicmljMRMwEQYDVQQDEwpPcmcxQ0EtdGxzMFkwEwYHKoZI\nzj0CAQYIKoZIzj0DAQcDQgAEDNsQBac7xMd5Yf/RNMxiMELJwcw6UgR3UHukLY6I\nFQ/XOAL49GAFYoeUHICbvBAA0GA4/Q7SAp3unf0xQfq8+KNWMFQwDgYDVR0PAQH/\nBAQDAgEGMBIGA1UdEwEB/wQIMAYBAf8CAQEwHQYDVR0OBBYEFDvFxdMcTLaCfQGH\nxBofTc++BNGeMA8GA1UdEQQIMAaHBApe5nswCgYIKoZIzj0EAwIDSAAwRQIhANPW\nA0tWtqt24fFi8LhwbvtCCuc1YtrFon3eXVHeIhU7AiAGh40WFSQqCRiDag55RgNG\nOQiLlRyj1P013ibvLrd8dg==\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "nfcaa4f-peerorg1.ibp2.us-south.containers.appdomain.cloud"
+            }
+        }
+    },
+    "certificateAuthorities": {
+        "nfcaa4f-org1ca.ibp2.us-south.containers.appdomain.cloud:7054": {
+            "url": "https://nfcaa4f-org1ca.ibp2.us-south.containers.appdomain.cloud:7054",
+            "caName": "ca",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\r\nMIIDADCCAmmgAwIBAgIJEpYY8sKpd1t+MA0GCSqGSIb3DQEBBQUAMIGdMUAwPgYD\r\nVQQDEzduZmNhYTRmLW9yZzFjYS5pYnAyLnVzLXNvdXRoLmNvbnRhaW5lcnMuYXBw\r\nZG9tYWluLmNsb3VkMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp\r\nbmExEDAOBgNVBAcTB1JhbGVpZ2gxDDAKBgNVBAoTA0lCTTETMBEGA1UECxMKQmxv\r\nY2tjaGFpbjAeFw0xOTExMDMxNTIwMDRaFw0yMDExMDIxNTIwMDRaMIGdMUAwPgYD\r\nVQQDEzduZmNhYTRmLW9yZzFjYS5pYnAyLnVzLXNvdXRoLmNvbnRhaW5lcnMuYXBw\r\nZG9tYWluLmNsb3VkMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp\r\nbmExEDAOBgNVBAcTB1JhbGVpZ2gxDDAKBgNVBAoTA0lCTTETMBEGA1UECxMKQmxv\r\nY2tjaGFpbjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAyyhdjlPIk/JSv6N3\r\n9DKe2JAcDCJ9gdJyR4Rn8FXuVFMvl+MbT8c/knhdg+eLibV59Cbtn+egTBGzeqrn\r\n5kGMKWyBFec8LuxjONUd77hv35QEtTpA6J+e46jtMqiGLKHWPDZmhUV4TdvAxQ9O\r\nlR1poF6EtZmKemRWuPugVbULi60CAwEAAaNGMEQwQgYDVR0RBDswOYI3bmZjYWE0\r\nZi1vcmcxY2EuaWJwMi51cy1zb3V0aC5jb250YWluZXJzLmFwcGRvbWFpbi5jbG91\r\nZDANBgkqhkiG9w0BAQUFAAOBgQBPySUGDanTQfuLDl46FWjF7vhZCtT0O+pncRrd\r\nVpmP4aH8fTrz/PjaWmV5N3QH2CuAmUzZwPz+OVMHXTet8NprAf11N40gLs7osQJ8\r\nKdedGQKArhIinpDV+RDnm3BPt/TwTrmY88hzpfIOrqYAUIyBldQMektODoLVzpgF\r\nEhbpQA==\r\n-----END CERTIFICATE-----\r\n"
+            }
+        }
+    }
+}
